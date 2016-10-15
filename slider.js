@@ -1,3 +1,42 @@
+<!-- this sets up the canvas that will be drawn on-->
+<!-- This is the slider version with value dynamically updating -->
+	<canvas id="canvas" >
+	Please upgrade to firefox or chome. Your browser does not support this program.
+	</canvas>
+
+<!-- p creates a new paragraph so items show up under the canvas not to the right side -->
+<p>
+<!--this opens the browser to select and image -->	
+<input type='file' id="input" accept="open"/> 
+<!--
+<button type='button' id='findEdges'>line drawing</button>-->
+<input type="range" id="slideValue" min="0" max="50" value="0" step="5" onchange="showValue(this.value)"/ >
+<span id="range2">0</span> 
+</p>
+<!-- the css code is here
+/* To remove the top and left whitespace */
+*{
+	margin: 0;
+	padding: 0;
+	}
+	
+/* Just to be sure these are full screen */
+html, body{
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+}
+/* to remove the scrollbars and show the canvas bounds */
+canvas{
+	/* display: block;*/
+	background: #fff;
+	margin: 5px;
+}
+-->
+
+
+	//<script src="canvas.js"></script>
+
 (function(){
 	//Define the two variables Canvas and ImageCanvas
 	//ImageCanvas is canvas that the images will be displayed on.
